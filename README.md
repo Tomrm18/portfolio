@@ -7,7 +7,7 @@
 ## About <a name="about"></a>
 This is the repo of my personal online portfolio, which contains information about me, my tech skills/stack, some of me personal projects, and ways to contact me. 
 
-Technology Used:
+Technologies Used:
 - HTML
 - CSS & SASS
 - TypeScript

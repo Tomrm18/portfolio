@@ -1,6 +1,7 @@
 import type { NextPage } from 'next'
 import Nav from '../components/nav';
 import About from '../components/sections/about';
+import Skills from '../components/sections/skills';
 
 const Home: NextPage = () => {
   return (
@@ -9,6 +10,7 @@ const Home: NextPage = () => {
       <Nav />
       <main>
         <About />
+        <Skills />
       </main>
     </>
   )
