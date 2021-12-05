@@ -86,10 +86,16 @@ select {
   }
 }
 .nav {
+  background-color: rgba(0, 0, 0, 0.05);
+  backdrop-filter: blur(3px);
+  position: fixed;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 10rem;
+  padding: 0.4rem 10rem;
+}
+.nav div:nth-of-type(2) {
+  padding-left: 25rem;
 }
 .nav ul {
   display: flex;
@@ -109,10 +115,14 @@ select {
   font-weight: 600;
 }
 
+.skills-container {
+  height: 100vh;
+}
+
 .skills-title {
   color: whitesmoke;
   text-align: center;
-  margin-bottom: 3rem;
+  margin-bottom: 4rem;
   font-size: 2.15rem;
 }
 
@@ -120,8 +130,27 @@ select {
   display: grid;
   grid-template-columns: repeat(5, 15%);
   justify-content: center;
-  row-gap: 2rem;
-  margin-bottom: 3rem;
+  row-gap: 4rem;
+  margin-bottom: 12rem;
+}
+.skills-grid span {
+  padding: 1rem;
+  align-items: center;
+  margin: 0 auto;
+  transition: all 0.135s ease-in;
+}
+.skills-grid span img:hover {
+  cursor: pointer;
+}
+.skills-grid span:hover {
+  transform: scale(1.1);
+  background-color: rgba(148, 5, 148, 0.75);
+}
+
+.projects-title {
+  color: whitesmoke;
+  text-align: center;
+  font-size: 2.15rem;
 }
 
 body {
@@ -134,7 +163,7 @@ body {
   justify-content: flex-start;
   color: whitesmoke;
   font-size: 2.5rem;
-  padding-top: 5rem;
+  padding-top: 10rem;
   margin-bottom: 150px;
 }
 .about-section div {
@@ -178,6 +207,7 @@ body {
   box-shadow: black 1px 3px 32px -4px;
   object-fit: cover;
   overflow: hidden;
+  z-index: -1;
 }
 .about-image span {
   position: initial !important;

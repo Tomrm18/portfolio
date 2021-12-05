@@ -1,8 +1,15 @@
 .nav {
+  background-color: rgba(0, 0, 0, 0.05);
+  backdrop-filter: blur(3px);
+  position: fixed;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 10rem;
+  padding: 0.4rem 10rem;
+
+  div:nth-of-type(2) {
+    padding-left: 25rem;
+  }
 
   ul {
     display: flex;

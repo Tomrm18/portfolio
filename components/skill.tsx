@@ -7,9 +7,9 @@ interface Props {
 
 const Skill:FC<Props> = ({image}) => {
   return (
-    <>
-      <Image src={image} width="80" height="80" />
-    </>
+    <span>
+      <Image className="skills-square" src={image} width="80" height="80" />
+    </span>
   )
 }
 

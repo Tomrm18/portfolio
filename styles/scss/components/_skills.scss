@@ -1,7 +1,13 @@
+@use "../abstracts/colours" as *;
+
+.skills-container {
+  height: 100vh;
+}
+
 .skills-title {
   color: whitesmoke;
   text-align: center;
-  margin-bottom: 3rem;
+  margin-bottom: 4rem;
   font-size: 2.15rem;
 }
 
@@ -9,6 +15,22 @@
   display: grid;
   grid-template-columns: repeat(5, 15%);
   justify-content: center;
-  row-gap: 2rem;
-  margin-bottom: 3rem;
+  row-gap: 4rem;
+  margin-bottom: 12rem;
+
+  span {
+    padding: 1rem;
+    align-items: center;
+    margin: 0 auto;
+    transition: all 0.135s ease-in;
+
+    img:hover {
+      cursor: pointer;
+    }
+  }
+
+  span:hover {
+    transform: scale(1.1);
+    background-color: rgba(148, 5, 148, 0.75);
+  }
 }
