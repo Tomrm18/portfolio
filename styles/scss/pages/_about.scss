@@ -1,0 +1,62 @@
+@use "../abstracts/colours" as *;
+
+.about-section {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  color: whitesmoke;
+  font-size: 2.5rem;
+  padding-top: 5rem;
+
+  div {
+    width: 550px;
+    margin-left: 7rem;
+  }
+
+  h2 {
+    font-size: 2.55rem;
+    line-height: 3.5rem;
+    font-weight: bold;
+  }
+
+  .green-text {
+    color: $green-text;
+  }
+
+  p {
+    padding-top: 0.5rem;
+    font-size: 1rem;
+  }
+
+  button {
+    margin-top: 1.5rem;
+    font-size: 1.15rem;
+    cursor: pointer;
+    color: whitesmoke;
+    background-color: transparent;
+    border: 1px solid $green-text;
+    padding: 0.35rem 1.15rem;
+    border-radius: 5rem;
+    transition: background-color 0.12s ease-in;
+  }
+
+  button:hover {
+    background-color: $green-text;
+  }
+}
+
+.about-image {
+  position: relative;
+  width: 250px;
+  height: 250px;
+  margin-left: 5rem;
+  border: 0;
+  border-radius: 50%;
+  box-shadow: black 1px 3px 32px -4px;
+  object-fit: cover;
+  overflow: hidden;
+
+  span {
+    position: initial;
+  }
+}

@@ -1,0 +1,170 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin and padding */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+  padding: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role=list],
+ol[role=list] {
+  list-style: none;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+  color: inherit;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+
+  *,
+*::before,
+*::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 10rem;
+}
+.nav ul {
+  display: flex;
+}
+.nav li {
+  list-style: none;
+  margin: 0 1.35rem;
+}
+.nav h1 a {
+  font-size: 1.75rem;
+  font-weight: 700;
+}
+.nav a {
+  text-decoration: none;
+  color: whitesmoke;
+  font-size: 0.95rem;
+  font-weight: 600;
+}
+
+body {
+  background-color: #081730;
+}
+
+.about-section {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  color: whitesmoke;
+  font-size: 2.5rem;
+  padding-top: 5rem;
+}
+.about-section div {
+  width: 550px;
+  margin-left: 7rem;
+}
+.about-section h2 {
+  font-size: 2.55rem;
+  line-height: 3.5rem;
+  font-weight: bold;
+}
+.about-section .green-text {
+  color: #3dc9a7;
+}
+.about-section p {
+  padding-top: 0.5rem;
+  font-size: 1rem;
+}
+.about-section button {
+  margin-top: 1.5rem;
+  font-size: 1.15rem;
+  cursor: pointer;
+  color: whitesmoke;
+  background-color: transparent;
+  border: 1px solid #3dc9a7;
+  padding: 0.35rem 1.15rem;
+  border-radius: 5rem;
+  transition: background-color 0.12s ease-in;
+}
+.about-section button:hover {
+  background-color: #3dc9a7;
+}
+
+.about-image {
+  position: relative;
+  width: 250px;
+  height: 250px;
+  margin-left: 5rem;
+  border: 0;
+  border-radius: 50%;
+  box-shadow: black 1px 3px 32px -4px;
+  object-fit: cover;
+  overflow: hidden;
+}
+.about-image span {
+  position: initial;
+}
+
+/*# sourceMappingURL=style.css.map */
