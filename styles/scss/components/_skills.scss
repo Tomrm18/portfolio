@@ -23,6 +23,7 @@
     align-items: center;
     margin: 0 auto;
     transition: all 0.135s ease-in;
+    z-index: 0;
 
     img:hover {
       cursor: pointer;
