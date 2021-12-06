@@ -6,7 +6,6 @@ import Projects from '../components/sections/projects';
 
 const Home: NextPage = () => {
   return (
-
     <>
       <Nav />
       <main>
