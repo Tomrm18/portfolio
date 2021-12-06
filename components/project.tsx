@@ -8,9 +8,11 @@ interface Props {
   title: string;
   desc: string;
   tech: string[];
+  github: string;
+  website: string;
 }
 
-const Project:FC<Props> = ({imgSrc, title, desc, tech}) => {
+const Project:FC<Props> = ({imgSrc, title, desc, tech, github, website}) => {
 
   
 
@@ -21,12 +23,12 @@ const Project:FC<Props> = ({imgSrc, title, desc, tech}) => {
         <h3 className="project-item-title">{title}</h3>
         <ul className="project-item-icons">
           <li>
-            <Link href={"https://github.com/Tomrm18/locara-project"}>
+            <Link href={github}>
               <FiGithub />
             </Link>
           </li>
           <li>
-            <Link href={"https://locara-project-serverless.vercel.app/"}>
+            <Link href={website}>
               <FiExternalLink />
             </Link>
           </li>

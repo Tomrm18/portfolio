@@ -343,8 +343,9 @@ body {
   padding-top: 0.5rem;
   font-size: 1rem;
 }
-.about-section button {
-  margin-top: 1.5rem;
+.about-section a {
+  text-decoration: none;
+  margin-top: 1.75rem;
   font-size: 1.15rem;
   cursor: pointer;
   color: whitesmoke;
@@ -354,7 +355,7 @@ body {
   border-radius: 5rem;
   transition: background-color 0.12s ease-in;
 }
-.about-section button:hover {
+.about-section a:hover {
   background-color: #3dc9a7;
 }
 

@@ -30,8 +30,9 @@
     font-size: 1rem;
   }
 
-  button {
-    margin-top: 1.5rem;
+  a {
+    text-decoration: none;
+    margin-top: 1.75rem;
     font-size: 1.15rem;
     cursor: pointer;
     color: whitesmoke;
@@ -42,7 +43,7 @@
     transition: background-color 0.12s ease-in;
   }
 
-  button:hover {
+  a:hover {
     background-color: $green-text;
   }
 }
