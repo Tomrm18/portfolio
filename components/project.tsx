@@ -37,7 +37,7 @@ const Project:FC<Props> = ({imgSrc, title, desc, tech, github, website}) => {
       <p className="project-item-desc">{desc}</p>
       <ul className="project-item-tech">
         {tech.map((elem) => (
-          <li>{elem}</li>
+          <li key={elem}>{elem}</li>
         ))}
       </ul>
     </span>

@@ -6,7 +6,7 @@ interface Props {
 
 const Link:FC<Props> = ({children, href}) => {
   return (
-    <a href={href} target="_blank">
+    <a href={href} target="_blank" rel="noreferrer">
       {children}
     </a>
   )
