@@ -1,18 +1,16 @@
 import { FC } from 'react';
 import Image from 'next/image';
 import { FiGithub, FiExternalLink } from 'react-icons/fi'
+import Link from './link';
 
 interface Props {
   imgSrc: any;
   title: string;
   desc: string;
-  techOne?: string;
-  techTwo?: string;
-  techThree?: string;
-  techFour?: string;
+  tech: string[];
 }
 
-const Project:FC<Props> = ({imgSrc, title, desc, techOne, techTwo, techThree, techFour}) => {
+const Project:FC<Props> = ({imgSrc, title, desc, tech}) => {
 
   
 
@@ -22,15 +20,23 @@ const Project:FC<Props> = ({imgSrc, title, desc, techOne, techTwo, techThree, te
       <div className="project-item-title-container">
         <h3 className="project-item-title">{title}</h3>
         <ul className="project-item-icons">
-          <li><FiGithub /></li>
-          <li><FiExternalLink /></li>
+          <li>
+            <Link href={"https://github.com/Tomrm18/locara-project"}>
+              <FiGithub />
+            </Link>
+          </li>
+          <li>
+            <Link href={"https://locara-project-serverless.vercel.app/"}>
+              <FiExternalLink />
+            </Link>
+          </li>
         </ul>
       </div>
       <p className="project-item-desc">{desc}</p>
       <ul className="project-item-tech">
-        <li>{techOne}</li>
-        <li>{techTwo}</li>
-        {techThree ?? <li>{techThree}</li>}
+        {tech.map((elem) => (
+          <li>{elem}</li>
+        ))}
       </ul>
     </span>
   )

@@ -19,6 +19,7 @@
 .project-item {
   padding: 1rem;
   background-color: rgba(255, 255, 255, 0.95);
+  box-shadow: rgb(60, 60, 60) 1px 3px 32px -1px;
   width: 450px;
   border-radius: 6px;
   margin-bottom: 2rem;
@@ -64,6 +65,11 @@
 
   svg {
     transform: scale(1.5);
+    color: black;
+  }
+
+  svg:hover {
+    color: rgb(199, 23, 199);
   }
 }
 

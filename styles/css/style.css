@@ -170,6 +170,7 @@ select {
 .project-item {
   padding: 1rem;
   background-color: rgba(255, 255, 255, 0.95);
+  box-shadow: #3c3c3c 1px 3px 32px -1px;
   width: 450px;
   border-radius: 6px;
   margin-bottom: 2rem;
@@ -209,6 +210,10 @@ select {
 }
 .project-item-icons svg {
   transform: scale(1.5);
+  color: black;
+}
+.project-item-icons svg:hover {
+  color: #c717c7;
 }
 
 .project-item-tech {

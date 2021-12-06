@@ -7,11 +7,9 @@ const Projects:FC = () => {
     <section className="projects-container">
       <h2 className="projects-title">Projects</h2>
       <div className="projects-grid">
-        <Project title={"Locara"} imgSrc={img} desc={"Locara Subscription Service."} techOne={"React"} techTwo={"Sass"} />
+        <Project title={"Locara"} imgSrc={img} desc={"Locara Subscription Service."} tech={["React", "Sass", "Typescript"]} />
 
-        <Project title={"Locara"} imgSrc={img} desc={"Locara Subscription Service."} techOne={"React"} techTwo={"Sass"} />
-
-        {/* <Project title={"Locara"} imgSrc={img} desc={"Locara Subscription Service."} tech={["blah", "yeet", "etc"]} /> */}
+        <Project title={"Locara"} imgSrc={img} desc={"Locara Subscription Service."} tech={["React", "Sass"]} />
       </div>
     </section>
   )
