@@ -9,7 +9,7 @@ interface Props {
   desc: string;
   tech: string[];
   github: string;
-  website: string;
+  website?: string;
 }
 
 const Project:FC<Props> = ({imgSrc, title, desc, tech, github, website}) => {
@@ -27,11 +27,15 @@ const Project:FC<Props> = ({imgSrc, title, desc, tech, github, website}) => {
               <FiGithub />
             </Link>
           </li>
+
+        {website &&
           <li>
             <Link href={website}>
               <FiExternalLink />
             </Link>
           </li>
+        }
+
         </ul>
       </div>
       <p className="project-item-desc">{desc}</p>

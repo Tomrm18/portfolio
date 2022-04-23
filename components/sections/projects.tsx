@@ -10,7 +10,7 @@ const Projects:FC = () => {
       <div className="projects-grid">
         <Project title={"Locara"} imgSrc={locaraImg} desc={"Car Subscription Service, query from up to 225 different cars from mongodb database."} tech={["React", "Next JS", "Sass", "Typescript", "Mongodb"]} github={"https://github.com/Tomrm18/locara-project"} website={"https://locara-project-serverless.vercel.app/"}/>
 
-        <Project title={"Solent"} imgSrc={solentImg} desc={"Freelance Developer Platform, heavily inspired by Fiverr and Upwork, authentication handled via Firebase"} tech={["React", "Firebase", "JavaScript"]} github={"https://github.com/Tomrm18/odin-js-final-project"} website="/" />
+        <Project title={"Solent"} imgSrc={solentImg} desc={"Freelance Developer Platform, heavily inspired by Fiverr and Upwork, authentication handled via Firebase"} tech={["React", "Firebase", "JavaScript"]} github={"https://github.com/Tomrm18/odin-js-final-project"}/>
       </div>
     </section>
   )
