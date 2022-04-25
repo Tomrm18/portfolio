@@ -1,16 +1,14 @@
 import { FC } from 'react';
-import Form from '../form';
+import { ContactForm } from '@components';
 
 interface Props {
 }
 
-const Contact:FC<Props> = () => {
+export const ContactSection:FC<Props> = () => {
   return (
     <section id="contact" className="contact-container">
       <h2>Contact Me</h2>
-      <Form />
+      <ContactForm />
     </section>
   )
 }
-
-export default Contact;

@@ -1,6 +1,6 @@
-import Link from 'next/link';
+import { Link } from '@components';
 
-const Nav = () => {
+export const NavBar = () => {
   return (
     <nav className="nav">
       <div>
@@ -11,19 +11,16 @@ const Nav = () => {
       <div>
         <ul>
           <li>
-            <a href="#about">About Me</a>
+            <Link href="#about">About Me</Link>
           </li>
           <li>
-            <a href="#projects">Projects</a>
+            <Link href="#projects">Projects</Link>
           </li>
           <li>
-            <a href="#contact">Contact</a>
+            <Link href="#contact">Contact</Link>
           </li>
         </ul>
       </div>
     </nav>
-
   )
 }
-
-export default Nav;

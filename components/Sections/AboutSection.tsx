@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import image1 from '../../images/Image1.jpg';
 
-const About = () => {
+export const AboutSection = () => {
   return (
     <section className="about-section" id="about">
       <div>
@@ -18,5 +18,3 @@ const About = () => {
     </section>
   )
 }
-
-export default About;

@@ -1,10 +1,10 @@
 import { FC } from 'react';
 import Image from 'next/image';
 import { FiGithub, FiExternalLink } from 'react-icons/fi'
-import Link from './link';
+import { Link } from '@components';
 
 interface Props {
-  imgSrc: any;
+  imgSrc: StaticImageData;
   title: string;
   desc: string;
   tech: string[];
@@ -12,10 +12,7 @@ interface Props {
   website?: string;
 }
 
-const Project:FC<Props> = ({imgSrc, title, desc, tech, github, website}) => {
-
-  
-
+export const Project:FC<Props> = ({imgSrc, title, desc, tech, github, website}) => {
   return (
     <span className="project-item">
       <Image src={imgSrc} width="450" height="250" />
@@ -47,5 +44,3 @@ const Project:FC<Props> = ({imgSrc, title, desc, tech, github, website}) => {
     </span>
   )
 }
-
-export default Project;

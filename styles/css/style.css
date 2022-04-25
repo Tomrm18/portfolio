@@ -90,13 +90,14 @@ select {
   }
 }
 .nav {
+  width: 100%;
   background-color: rgba(0, 0, 0, 0.05);
   backdrop-filter: blur(3px);
   position: fixed;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0.4rem 10rem;
+  padding: 0.4rem 20rem;
   z-index: 2;
 }
 .nav div:nth-of-type(2) {
@@ -120,6 +121,11 @@ select {
   font-weight: 600;
 }
 
+@media screen and (max-width: 1200px) {
+  .nav {
+    padding: 0.4rem 10rem;
+  }
+}
 .skills-container {
   height: 100vh;
 }
@@ -314,14 +320,10 @@ select {
   color: #c717c7;
 }
 
-body {
-  background-color: #081730;
-}
-
 .about-section {
   display: flex;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: center;
   color: whitesmoke;
   font-size: 2.5rem;
   padding-top: 10rem;
@@ -373,6 +375,10 @@ body {
 }
 .about-image span {
   position: initial !important;
+}
+
+body {
+  background-color: #081730;
 }
 
 /*# sourceMappingURL=style.css.map */

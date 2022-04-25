@@ -10,7 +10,7 @@ import nextImage from '../public/images/next.svg';
 import mongoImage from '../public/images/mongo.svg';
 
 
-const images = {
+export const images = {
   html: htmlImage,
   css: cssImage,
   sass: sassImage,
@@ -23,4 +23,3 @@ const images = {
   mongo: mongoImage,
 }
 
-export default images;

@@ -1,9 +1,9 @@
 import { FC } from 'react';
-import Project from '../project';
+import { Project } from '@components';
 import locaraImg from '../../images/project1.png';
 import solentImg from '../../images/project2.png';
 
-const Projects:FC = () => {
+export const ProjectsSection:FC = () => {
   return (
     <section className="projects-container" id="projects">
       <h2 className="projects-title">Projects</h2>
@@ -16,4 +16,3 @@ const Projects:FC = () => {
   )
 }
 
-export default Projects;

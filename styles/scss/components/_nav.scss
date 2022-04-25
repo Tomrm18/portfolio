@@ -1,11 +1,12 @@
 .nav {
+  width: 100%;
   background-color: rgba(0, 0, 0, 0.05);
   backdrop-filter: blur(3px);
   position: fixed;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0.4rem 10rem;
+  padding: 0.4rem 20rem;
   z-index: 2;
 
   div:nth-of-type(2) {
@@ -33,5 +34,11 @@
     color: whitesmoke;
     font-size: 0.95rem;
     font-weight: 600;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .nav {
+    padding: 0.4rem 10rem;
   }
 }

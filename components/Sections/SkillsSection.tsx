@@ -1,10 +1,12 @@
-import { FC } from 'react'
-import Skill from './skill';
-import images from '../config/images'
+import { Skill } from "@components";
 
-const SkillsGrid:FC = () => {
+import { images } from "../../config";
+
+export const SkillsSection = () => {
   return (
-    <div className="skills-grid">
+    <section className="skills-container">
+      <h2 className="skills-title">My Techstack & Skills</h2>
+      <div className="skills-grid">
         <Skill image={images.html}/>
         <Skill image={images.css}/>
         <Skill image={images.sass}/>
@@ -16,7 +18,6 @@ const SkillsGrid:FC = () => {
         <Skill image={images.next}/>
         <Skill image={images.mongo}/>
     </div>
+    </section>
   )
 }
-
-export default SkillsGrid;

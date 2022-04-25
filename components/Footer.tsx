@@ -1,9 +1,7 @@
 import { FC } from 'react';
-import Socials from './socials';
+import { Socials } from "@components";
 
-
-const Footer:FC = ({}) => {
-
+export const Footer:FC = () => {
   return (
     <footer className="footer">
       <Socials />
@@ -12,4 +10,3 @@ const Footer:FC = ({}) => {
   )
 }
 
-export default Footer;
