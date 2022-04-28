@@ -7,15 +7,14 @@
     "compile-ts": "tsc -w",
     "compile-sass": "sass --watch styles/scss/style.scss styles/css/style.css",
     "build": "next build",
-    "start": "next start",
-    "lint": "next lint",
-    "all": "npm-run-all --parallel compile-sass compile-ts dev"
+    "start": "npm-run-all --parallel compile-sass compile-ts dev"
   },
   "dependencies": {
     "next": "12.0.3",
     "react": "17.0.2",
     "react-dom": "17.0.2",
-    "react-icons": "^4.3.1"
+    "react-icons": "^4.3.1",
+    "typed.js": "^2.0.12"
   },
   "devDependencies": {
     "@types/react": "17.0.34",

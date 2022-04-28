@@ -2,6 +2,7 @@ export * from './Elements';
 export * from './Sections';
 export * from './NavBar';
 export * from './Skill';
+export * from './ExperienceField';
 export * from './Project';
 export * from './ContactForm';
 export * from './SocialIcons';

@@ -1,6 +1,6 @@
 import type { NextPage } from 'next'
 
-import { NavBar, AboutSection, SkillsSection, ProjectsSection, ContactSection, Footer } from "@components";
+import { NavBar, AboutSection, SkillsSection, ExperienceSection, ProjectsSection, ContactSection, Footer } from "@components";
 
 const Home: NextPage = () => {
   return (
@@ -8,6 +8,7 @@ const Home: NextPage = () => {
       <NavBar />
       <AboutSection />
       <SkillsSection />
+      <ExperienceSection />
       <ProjectsSection />
       <ContactSection />
       <Footer />

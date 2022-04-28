@@ -123,7 +123,7 @@ select {
 
 @media screen and (max-width: 1200px) {
   .nav {
-    padding: 0.4rem 10rem;
+    padding: 0.4rem 6rem;
   }
 }
 .skills-container {
@@ -341,6 +341,9 @@ select {
 .about-section .green-text {
   color: #3dc9a7;
 }
+.about-section .typed {
+  height: 3.5rem;
+}
 .about-section p {
   padding-top: 0.5rem;
   font-size: 1rem;
@@ -375,6 +378,50 @@ select {
 }
 .about-image span {
   position: initial !important;
+}
+
+.exp-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-self: center;
+  color: whitesmoke;
+  height: 100vh;
+  padding: 0 8rem;
+  padding-bottom: 10rem;
+}
+.exp-section h2 {
+  text-align: center;
+  padding-bottom: 2rem;
+  font-size: 2.15rem;
+  font-weight: bold;
+}
+.exp-section div {
+  border: 1px solid #3dc9a7;
+  border-radius: 5px;
+  padding: 0.35rem 0.75rem;
+  margin-bottom: 1.5rem;
+  transition: all 0.135s ease-in;
+}
+.exp-section div h3 {
+  font-weight: 500;
+  margin-bottom: 0.3rem;
+}
+.exp-section div li {
+  font-weight: initial;
+  list-style: circle;
+  line-height: 1.85rem;
+}
+.exp-section div:hover {
+  transform: scale(1.025);
+}
+
+.job-title {
+  color: #3dc9a7;
+}
+
+.time {
+  font-style: italic;
 }
 
 body {
